@@ -5,7 +5,11 @@ Write a function that takes a string as input and returns the string reversed.
 **Example:**  
 Given s = "hello", return "olleh".
 
-题目连接: [https://leetcode.com/problems/reverse-string/](https://leetcode.com/problems/reverse-string/)
+## 题目连接
+
+[https://leetcode.com/problems/reverse-string/](https://leetcode.com/problems/reverse-string/)
+
+---
 
 # Python {#python}
 
