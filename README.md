@@ -1,4 +1,4 @@
-# 前言
+# [Two Pointers](Two Pointers)前言
 
 来源与某个早上,突然的一通电话.
 
