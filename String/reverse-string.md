@@ -21,7 +21,7 @@ class Solution(object):
         return s[::-1]
 ```
 
-# JavaScript
+# JavaScript {#javascript}
 
 ```js
 /**
@@ -33,7 +33,7 @@ var reverseString = function(s) {
 };
 ```
 
-# Go
+# Go {#go}
 
 ```go
 func reverseString(s string) string {
