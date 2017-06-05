@@ -15,5 +15,6 @@
   * [Remove Linked List Elements](Linked List/remove-linked-list-elements.md)
 * [4.Hash Table](Hash Table/README.md)
   * [Single Number](Hash Table/single-number.md)
-* 5.Stack
+* [5.Stack](Stack/README.md)
+  * [Valid Parentheses](Stack/valid-parentheses.md)
 
