@@ -1,3 +1,6 @@
-# First Chapter
+# Array
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+数组是最基础也是最常用的数据结构.
+
+https://leetcode.com/tag/array/
+
