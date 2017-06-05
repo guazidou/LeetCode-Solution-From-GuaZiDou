@@ -49,5 +49,13 @@ func reverseString(s string) string {
 }
 ```
 
+# Java
+
+```java
+ public String reverseString(String s) {
+        return new StringBuilder(s).reverse().toString();
+    }
+```
+
 
 
