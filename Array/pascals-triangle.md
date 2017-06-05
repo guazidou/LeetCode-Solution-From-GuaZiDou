@@ -14,8 +14,10 @@ Return
  [1,4,6,4,1]
 ]
 ```
+
 ## 题目链接
-[https://leetcode.com/problems/pascals-triangle/#/description](https://leetcode.com/problems/pascals-triangle/#/description)
+
+[https://leetcode.com/problems/pascals-triangle/\#/description](https://leetcode.com/problems/pascals-triangle/#/description)
 
 ---
 
@@ -44,6 +46,24 @@ class Solution(object):
                     temp.append(res[x-1][y-1] + res[x-1][y])
             res.append(temp)
         return res
+```
+
+# Java
+
+```java
+public List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> results = new ArrayList();
+        for (int i = 0; i < numRows; i++) {
+            Integer[] temp = new Integer[i + 1];
+            temp[0] = temp[i] = 1;
+            for (int j = 0; j < i - 1; j++) {
+                List<Integer> pre = results.get(i - 1);
+                temp[j + 1] = pre.get(j) + pre.get(j + 1);
+            }
+            results.add(Arrays.asList(temp));
+        }
+        return results;
+    }
 ```
 
 

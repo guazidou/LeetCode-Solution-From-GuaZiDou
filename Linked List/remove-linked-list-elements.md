@@ -48,5 +48,26 @@ class Solution(object):
         return head
 ```
 
+# Java
+
+```java
+public static ListNode removeElements(ListNode head, int val) {
+        ListNode pre = new ListNode(Integer.MAX_VALUE);
+        pre.next = head;
+        ListNode result = pre;
+        ListNode now = head;
+        while (now != null) {
+            if (now.val == val) {
+                pre.next = now.next;
+                now = pre.next;
+            } else {
+                pre = pre.next;
+                now = now.next;
+            }
+        }
+        return result.next;
+    }
+```
+
 
 
