@@ -1,6 +1,6 @@
 # 前言
 
-来源与某个早上,突然的一通电话.
+源自某个早上的一通电话.
 
 主要记录并书写在LeetCode解题的过程, 包括在解题过程中的理解过程,掉坑爬坑的经历,以及题目背后暗含的知识点.
 
@@ -9,7 +9,10 @@
 由于水平有限, 在行文过程中难免犯错, 如有任何质量问题, 请直接到[github issues](https://github.com/guazidou/LeetCode-Solution-From-GuaZiDou/issues)反馈, 如果你喜欢我们的内容或者我们有一点帮助到您的地方, 非常欢迎您能给我们[加星star](https://github.com/guazidou/LeetCode-Solution-From-GuaZiDou).
 
 # 在线阅读
-在线阅读: [https://guazidou.gitbooks.io/leetcode-solution-from-guazidou/content/](https://guazidou.gitbooks.io/leetcode-solution-from-guazidou/content/)
+[https://leetcode-book.guazidou.com](https://leetcode-book.guazidou.com)
+
+# GitHub
+[https://github.com/guazidou/LeetCode-Solution-From-GuaZiDou](https://github.com/guazidou/LeetCode-Solution-From-GuaZiDou)
 
 # 贡献者
 
