@@ -13,6 +13,7 @@
 * [2.Array](Array/README.md)
   * [Pascal's Triangle](Array/pascals-triangle.md)
   * [Rotate Array](Array/rotate-array.md)
+  * [Remove Element](Array/remove-element.md)
 * [3.Linked List](Linked List/README.md)
   * [Remove Linked List Elements](Linked List/remove-linked-list-elements.md)
   * [Add Two Numbers](Linked List/add-two-numbers.md)
