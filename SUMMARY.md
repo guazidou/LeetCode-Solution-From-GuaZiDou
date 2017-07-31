@@ -3,6 +3,7 @@
 ## Preface
 
 * [前言](README.md)
+* [Change Log](change-log.md)
 
 ## Content
 
