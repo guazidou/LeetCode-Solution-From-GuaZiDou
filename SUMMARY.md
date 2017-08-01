@@ -10,6 +10,7 @@
 * [1.String](String/README.md)
   * [Reverse String](String/reverse-string.md)
   * [Roman to Integer](String/roman-to-integer.md)
+  * [Reverse Words in a String](String/reverse-words-in-a-string.md)
 * [2.Array](Array/README.md)
   * [Pascal's Triangle](Array/pascals-triangle.md)
   * [Rotate Array](Array/rotate-array.md)
