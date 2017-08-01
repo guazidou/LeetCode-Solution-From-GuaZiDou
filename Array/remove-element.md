@@ -21,7 +21,7 @@ Your function should return length = 2, with the first two elements ofnumsbeing 
 
 这是python数组的基本操作，自带了remove，但是一次只删除一个，循环一下删除所有。
 
-```python
+```java
 class Solution:
     # @param {integer[]} nums
     # @param {integer} val
@@ -32,6 +32,20 @@ class Solution:
                 nums.remove(val)
             except ValueError:
                 return len(nums)
+```
+
+# Java
+
+```java
+ public int removeElement(int[] nums, int val) {
+        int length = 0;
+        for (int num : nums) {
+            if (num != val) {
+                nums[length++] = num;
+            }
+        }
+        return length;
+    }
 ```
 
 
