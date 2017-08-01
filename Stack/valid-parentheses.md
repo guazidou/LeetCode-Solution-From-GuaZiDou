@@ -34,5 +34,33 @@ class Solution(object):
         return stack == []
 ```
 
+# Java
+
+```java
+public class Solution {
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(' || s.charAt(i) == '[' || s.charAt(i) == '{')
+                stack.push(s.charAt(i));
+            else if (stack.empty()) {
+                return false;
+            } else {
+                if (!isPair(stack.pop(), s.charAt(i))) return false;
+            }
+        }
+
+        return stack.empty();
+    }
+
+    public boolean isPair(char a, char b) {
+        if (a == '(' && b == ')') return true;
+        if (a == '[' && b == ']') return true;
+        if (a == '{' && b == '}') return true;
+        return false;
+    }
+}
+```
+
 
 
