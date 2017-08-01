@@ -11,7 +11,7 @@ Given input arraynums=`[3,2,2,3]`,val=`3`
 
 Your function should return length = 2, with the first two elements ofnumsbeing 2.
 
-# 问题链接
+## 题目链接
 
 [https://leetcode.com/problems/remove-element/description/](https://leetcode.com/problems/remove-element/description/)
 
