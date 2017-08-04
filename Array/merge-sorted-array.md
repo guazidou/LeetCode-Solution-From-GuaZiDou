@@ -24,3 +24,27 @@ class Solution:
         nums1[m:] = nums2[:n]
         nums1.sort()
 ```
+
+# Java
+
+两个数组本身已经排好序，现在从2个数组的末尾开始比较，将大的结果放到nums1末尾，并将索引-1，依次到nums1全部占满。
+
+```java
+public class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        int p = m + n, p1 = m - 1, p2 = n - 1;
+        while (--p >= 0) {
+            if ((p2 < 0) || (p1 >= 0 && nums1[p1] >= nums2[p2])) {
+                nums1[p] = nums1[p1--];
+            } else {
+                nums1[p] = nums2[p2--];
+            }
+        }
+    }
+}
+```
+
+
+
+
+
