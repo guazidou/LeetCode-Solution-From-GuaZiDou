@@ -24,6 +24,7 @@
   * [Add Two Numbers](Linked List/add-two-numbers.md)
 * [4.Hash Table](Hash Table/README.md)
   * [Single Number](Hash Table/single-number.md)
+  * [Replace Words](Hash Table/replace-words.md)
 * [5.Stack](Stack/README.md)
   * [Valid Parentheses](Stack/valid-parentheses.md)
 
