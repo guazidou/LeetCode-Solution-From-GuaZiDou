@@ -13,6 +13,7 @@
   * [Reverse Words in a String](String/reverse-words-in-a-string.md)
 * [2.Array](Array/README.md)
   * [Pascal's Triangle](Array/pascals-triangle.md)
+  * [Pascal's Triangle II](Array/pascals-triangle-ii.md)
   * [Rotate Array](Array/rotate-array.md)
   * [Remove Element](Array/remove-element.md)
   * [Plus One](Array/plus-one.md)
