@@ -9,7 +9,9 @@ Given an array of integers, find if the array contains any duplicates. Your func
 ---
 
 # Python
-基本做法,不开额外开销, 排序, 前后对比
+
+基本做法,不开额外空间开销, 将数组排序,进行数组元素前后对比
+
 ```python
 class Solution:
     # @param {integer[]} nums
@@ -22,7 +24,9 @@ class Solution:
                 return True
         return False
 ```
+
 python语言特点做法,提用set集合
+
 ```python
 class Solution(object):
     def containsDuplicate(self, nums):
@@ -32,3 +36,6 @@ class Solution(object):
         """
         return False if len(nums) == len(set(nums)) else True
 ```
+
+
+
