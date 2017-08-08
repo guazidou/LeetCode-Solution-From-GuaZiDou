@@ -30,4 +30,5 @@
   * [Replace Words](Hash Table/replace-words.md)
 * [5.Stack](Stack/README.md)
   * [Valid Parentheses](Stack/valid-parentheses.md)
+  * [Next Greater Element I](Stack/next-greater-element-i.md)
 
