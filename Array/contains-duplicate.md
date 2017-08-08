@@ -37,5 +37,22 @@ class Solution(object):
         return False if len(nums) == len(set(nums)) else True
 ```
 
+# Java
+
+利用set集合的不可重复性完成本题。
+
+```java
+public class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        Set<Integer> set = new HashSet();
+        for (int num : nums) {
+            if (!set.add(num)) return true;
+        }
+        return false;
+    }
+
+}
+```
+
 
 
