@@ -21,6 +21,7 @@
   * [Merge Sorted Array](Array/merge-sorted-array.md)
   * [Majority Element](Array/majority-element.md)
   * [Contains Duplicate](Array/contains-duplicate.md)
+  * [Summary Ranges](Array/summary-ranges.md)
 * [3.Linked List](Linked List/README.md)
   * [Remove Linked List Elements](Linked List/remove-linked-list-elements.md)
   * [Add Two Numbers](Linked List/add-two-numbers.md)
