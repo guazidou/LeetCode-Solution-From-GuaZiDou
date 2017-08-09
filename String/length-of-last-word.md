@@ -19,6 +19,7 @@ return`5`.
 # Python
 
 python强大的字符串处理能力，直接可以已空格划分，pop出最后一个字串测量长度，处理一下空字符串问题
+
 ```python
 class Solution:
     # @param {string} s
@@ -31,3 +32,19 @@ class Solution:
         finally:
             return l
 ```
+
+# Java
+
+按空格分割，求最后一个字符串的长度
+
+```java
+public class Solution {
+    public int lengthOfLastWord(String s) {
+        if (s.split(" ").length == 0) return 0;
+        return s.split(" ")[s.split(" ").length - 1].length();
+    }
+}
+```
+
+
+
