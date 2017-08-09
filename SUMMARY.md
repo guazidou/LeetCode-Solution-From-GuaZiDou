@@ -31,4 +31,6 @@
 * [5.Stack](Stack/README.md)
   * [Valid Parentheses](Stack/valid-parentheses.md)
   * [Next Greater Element I](Stack/next-greater-element-i.md)
+* [6.Math](Math/README.md)
+  * [Add Digits](Math/add-digits.md)
 
