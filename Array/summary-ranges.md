@@ -51,9 +51,8 @@ public class Solution {
         List<String> result = new ArrayList<>();
         boolean isFirst = true;
         for (int num : nums) {
-            if (isFirst) {
+            if (isFirst || num != last + 1) {
                 result.add(String.valueOf(num));
-                isFirst = false;
             } else if (num == last + 1) {
                 String before = result.get(result.size() - 1);
                 if (before.contains("->")) {
@@ -61,13 +60,10 @@ public class Solution {
                 } else {
                     result.set(result.size() - 1, before + "->" + num);
                 }
-                isFirst = false;
-            } else if (num != last + 1) {
-                result.add(String.valueOf(num));
             }
             last = num;
+            isFirst = false;
         }
-
         return result;
     }
 }
