@@ -45,7 +45,8 @@ class Solution:
 # Java
 
 ```java
-public List<String> summaryRanges(int[] nums) {
+public class Solution {
+    public List<String> summaryRanges(int[] nums) {
         int last = Integer.MIN_VALUE;
         List<String> result = new ArrayList<>();
         boolean isFirst = true;
@@ -69,6 +70,7 @@ public List<String> summaryRanges(int[] nums) {
 
         return result;
     }
+}
 ```
 
 
