@@ -41,3 +41,35 @@ class Solution:
             res.append(str(nums[p1])+'->'+str(nums[p2-1]))
         return res
 ```
+
+# Java
+
+```java
+public List<String> summaryRanges(int[] nums) {
+        int last = Integer.MIN_VALUE;
+        List<String> result = new ArrayList<>();
+        boolean isFirst = true;
+        for (int num : nums) {
+            if (isFirst) {
+                result.add(String.valueOf(num));
+                isFirst = false;
+            } else if (num == last + 1) {
+                String before = result.get(result.size() - 1);
+                if (before.contains("->")) {
+                    result.set(result.size() - 1, before.split("->")[0] + "->" + num);
+                } else {
+                    result.set(result.size() - 1, before + "->" + num);
+                }
+                isFirst = false;
+            } else if (num != last + 1) {
+                result.add(String.valueOf(num));
+            }
+            last = num;
+        }
+
+        return result;
+    }
+```
+
+
+
