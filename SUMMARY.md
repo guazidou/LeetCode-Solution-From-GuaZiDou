@@ -25,6 +25,7 @@
 * [3.Linked List](Linked List/README.md)
   * [Remove Linked List Elements](Linked List/remove-linked-list-elements.md)
   * [Add Two Numbers](Linked List/add-two-numbers.md)
+  * [Delete Node in a Linked List](Linked List/delete-node-in-a-linked-list.md)
 * [4.Hash Table](Hash Table/README.md)
   * [Single Number](Hash Table/single-number.md)
   * [Replace Words](Hash Table/replace-words.md)
