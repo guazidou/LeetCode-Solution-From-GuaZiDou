@@ -15,7 +15,6 @@ Supposed the linked list is`1 -> 2 -> 3 -> 4`and you are given the third node wi
 链表的基础操作, 需要注意的是, 题目中给出的某一个中间节点, 需要处理尾节点的问题
 
 ```python
-
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
@@ -32,3 +31,6 @@ class Solution(object):
             node.val = node.next.val
             node.next = node.next.next
 ```
+
+
+
