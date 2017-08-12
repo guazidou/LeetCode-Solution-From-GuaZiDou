@@ -37,4 +37,5 @@
   * [Add Digits](Math/add-digits.md)
 * [7.Tree](Tree/README.md)
   * [Maximum Depth of Binary Tree](Tree/maximum-depth-of-binary-tree.md)
+  * [Same Tree](Tree/same-tree.md)
 
