@@ -13,6 +13,7 @@ The maximum depth is the number of nodes along the longest path from the root no
 # Python {#python}
 
 树的基本操作, 最大深度, 递归算法
+
 ```python
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -34,3 +35,20 @@ class Solution(object):
             l = left + 1 if left >= right else right + 1
         return l
 ```
+
+# Java
+
+```java
+public class Solution {
+    public int maxDepth(TreeNode root) {
+        if (root == null)
+            return 0;
+        int leftDepth = maxDepth(root.left);
+        int rightDepth = maxDepth(root.right);
+        return leftDepth >= rightDepth ? leftDepth + 1 : rightDepth + 1;
+    }
+}
+```
+
+
+
