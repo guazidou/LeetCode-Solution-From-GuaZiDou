@@ -1,6 +1,5 @@
 # 问题描述
 
-
 Invert a binary tree.
 
 ```
@@ -21,8 +20,6 @@ to
 9   6 3   1
 ```
 
-
-
 ## 题目连接
 
 [https://leetcode.com/problems/invert-binary-tree/description/](https://leetcode.com/problems/invert-binary-tree/description/)
@@ -30,6 +27,7 @@ to
 ---
 
 # Python {#python}
+
 二叉树翻转使用基本的递归可解决
 
 ```python
@@ -53,3 +51,26 @@ class Solution(object):
         self.invertTree(root.right)
         return root
 ```
+
+# Java
+
+利用递归的思想依次交换左右节点
+
+```java
+public class Solution {
+    public TreeNode invertTree(TreeNode root) {
+        if (root == null)
+            return null;
+        TreeNode tmp = root.left;
+        root.left = root.right;
+        root.right = tmp;
+
+        root.left = invertTree(root.left);
+        root.right = invertTree(root.right);
+        return root;
+    }
+}
+```
+
+
+
