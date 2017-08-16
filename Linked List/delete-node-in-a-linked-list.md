@@ -32,5 +32,20 @@ class Solution(object):
             node.next = node.next.next
 ```
 
+# Java
+
+题意：给出一个非尾节点并进行删除，简单的将被删除的节点的值被赋予下个节点的值，它的下个节点成为下下个节点即可。
+
+```java
+public class Solution {
+    public void deleteNode(ListNode node) {
+        if (node != null) {
+            node.val = node.next.val;
+            node.next = node.next.next;
+        }
+    }
+}
+```
+
 
 
