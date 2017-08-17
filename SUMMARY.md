@@ -24,6 +24,7 @@
   * [Contains Duplicate](Array/contains-duplicate.md)
   * [Summary Ranges](Array/summary-ranges.md)
   * [Move Zeroes](Array/move-zeroes.md)
+  * [Best Time to Buy and Sell Stock](Array/best-time-to-buy-and-sell-stock.md)
 * [3.Linked List](Linked List/README.md)
   * [Remove Linked List Elements](Linked List/remove-linked-list-elements.md)
   * [Add Two Numbers](Linked List/add-two-numbers.md)
