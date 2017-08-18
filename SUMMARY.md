@@ -43,4 +43,5 @@
   * [Maximum Depth of Binary Tree](Tree/maximum-depth-of-binary-tree.md)
   * [Same Tree](Tree/same-tree.md)
   * [Invert Binary Tree](Tree/invert-binary-tree.md)
+  * [Lowest Common Ancestor of a Binary Search Tree](Tree/lowest-common-ancestor-of-a-binary-search-tree.md)
 
