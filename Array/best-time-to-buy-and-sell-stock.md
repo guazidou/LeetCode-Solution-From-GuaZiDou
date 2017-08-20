@@ -31,6 +31,7 @@ In this case, no transaction is done, i.e. max profit = 0.
 # Python
 
 DP的入门题目,先用模拟做
+
 ```python
 class Solution(object):
     def maxProfit(self, prices):
@@ -48,3 +49,24 @@ class Solution(object):
                 profit = price -lowprice
         return profit
 ```
+
+# Java
+
+暴力求解
+
+```java
+class Solution {
+    public int maxProfit(int[] prices) {
+        int max = 0;
+        int curMin = Integer.MAX_VALUE;
+        for (int i = 0; i < prices.length; i++) {
+            curMin = Math.min(curMin, prices[i]);
+            max = Math.max(max, prices[i] - curMin);
+        }
+        return max;
+    }
+}
+```
+
+
+
