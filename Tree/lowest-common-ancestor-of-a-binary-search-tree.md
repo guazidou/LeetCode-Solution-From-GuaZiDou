@@ -12,7 +12,6 @@ According to the[definition of LCA on Wikipedia](https://en.wikipedia.org/wiki/L
    0      _4       7       9
          /  \
          3   5
-
 ```
 
 For example, the lowest common ancestor \(LCA\) of nodes`2`and`8`is`6`. Another example is LCA of nodes`2`and`4`is`2`, since a node can be a descendant of itself according to the LCA definition.
@@ -24,8 +23,6 @@ For example, the lowest common ancestor \(LCA\) of nodes`2`and`8`is`6`. Another 
 ---
 
 # Python {#python}
-
-
 
 ```python
 # Definition for a binary tree node.
@@ -58,3 +55,31 @@ class Solution(object):
                 return root
         return root
 ```
+
+# Java
+
+经典的最近祖先算法，先让节点p，q按小到大排序，然后从根节点满足根节点值小于p值或大于q值开始循环，若根节点值小于p值，根节点取其右节点，若根节点值大于q值，根节点取其左节点。
+
+```java
+class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (p.val > q.val) {
+            TreeNode tmp = p;
+            p = q;
+            q = tmp;
+        }
+        while (root.val < p.val || root.val > q.val) {
+            if (root.val < p.val) {
+                root = root.right;
+            }
+            if (root.val > q.val) {
+                root = root.left;
+            }
+        }
+        return root;
+    }
+}
+```
+
+
+
