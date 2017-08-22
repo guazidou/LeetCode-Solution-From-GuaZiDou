@@ -46,4 +46,5 @@
   * [Lowest Common Ancestor of a Binary Search Tree](Tree/lowest-common-ancestor-of-a-binary-search-tree.md)
 * [8.Bit Manipulation](Bit Manipulation/README.md)
   * [Number of 1 Bits](Bit Manipulation/number-of-1-bits.md)
+  * [Single Number II](Bit Manipulation/single-number-ii.md)
 
