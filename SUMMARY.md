@@ -27,6 +27,7 @@
   * [Best Time to Buy and Sell Stock](Array/best-time-to-buy-and-sell-stock.md)
   * [Best Time to Buy and Sell Stock II](Array/best-time-to-buy-and-sell-stock-ii.md)
   * [Contains Duplicate II](Array/contains-duplicate-ii.md)
+  * [Two Sum](Array/two-sum.md)
 * [3.Linked List](Linked List/README.md)
   * [Remove Linked List Elements](Linked List/remove-linked-list-elements.md)
   * [Add Two Numbers](Linked List/add-two-numbers.md)
