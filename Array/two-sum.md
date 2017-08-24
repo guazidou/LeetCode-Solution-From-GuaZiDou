@@ -4,8 +4,7 @@ Given an array of integers, return **indices **of the two numbers such that they
 
 You may assume that each input would have **exactly **one solution, and you may not use the same element twice.
 
-**Example:**  
-
+**Example:**
 
 ```
 Given nums = [2, 7, 11, 15], target = 9,
@@ -23,6 +22,7 @@ return [0, 1].
 # Python
 
 两个循环
+
 ```python
 class Solution(object):
     def twoSum(self, nums, target):
@@ -38,6 +38,7 @@ class Solution(object):
 ```
 
 两个指针
+
 ```python
 class Solution:
     # @param {integer[]} nums
@@ -55,6 +56,29 @@ class Solution:
             else:
                 break
         return sorted([nums.index(sortedNums[index1])+1,nums.index(sortedNums[index2])+1])
-                
 ```
+
+# Java
+
+循环即可解决
+
+```java
+public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int[] results = new int[2];
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[i] + nums[j] == target) {
+                    results[0] = i;
+                    results[1] = j;
+                    return results;
+                }
+            }
+        }
+        return results;
+    }
+}
+```
+
+
 
