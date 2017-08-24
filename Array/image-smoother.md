@@ -15,9 +15,6 @@ Given a 2D integer matrix M representing the gray scale of an image, you need to
 ```java
 class Solution {
 public int[][] imageSmoother(int[][] M) {
-        if (M.length == 0 || M[0].length == 0) {
-            return M;
-        }
         int[][] results = new int[M.length][M[0].length];
         for (int i = 0; i < M.length; i++) {
             for (int j = 0; j < M[0].length; j++) {
