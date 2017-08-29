@@ -29,6 +29,7 @@
   * [Contains Duplicate II](Array/contains-duplicate-ii.md)
   * [Two Sum](Array/two-sum.md)
   * [Image Smoother](Array/image-smoother.md)
+  * [Non-decreasing Array](Array/non-decreasing-array.md)
 * [3.Linked List](Linked List/README.md)
   * [Remove Linked List Elements](Linked List/remove-linked-list-elements.md)
   * [Add Two Numbers](Linked List/add-two-numbers.md)
