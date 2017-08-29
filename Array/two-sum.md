@@ -21,7 +21,7 @@ return [0, 1].
 
 # Python
 
-两个循环
+两个指针
 
 ```python
 class Solution(object):
