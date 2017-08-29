@@ -50,4 +50,5 @@
 * [8.Bit Manipulation](Bit Manipulation/README.md)
   * [Number of 1 Bits](Bit Manipulation/number-of-1-bits.md)
   * [Single Number II](Bit Manipulation/single-number-ii.md)
+  * [Hamming Distance](Bit Manipulation/hamming-distance.md)
 
