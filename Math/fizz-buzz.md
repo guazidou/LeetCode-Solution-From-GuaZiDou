@@ -27,11 +27,9 @@ Return:
     "14",
     "FizzBuzz"
 ]
-
 ```
 
-
-## 题目连接
+## 题目链接
 
 [https://leetcode.com/problems/fizz-buzz/description/](https://leetcode.com/problems/fizz-buzz/description/)
 
@@ -59,3 +57,26 @@ class Solution(object):
             return res
         return map(FizzBuzz, range(1, n+1))
 ```
+
+# Java
+
+题意：3的倍数显示Fizz，5的倍数显示Buzz，即是3和5的倍数显示FizzBuzz，其他显示本身。
+
+```java
+class Solution {
+      public List<String> fizzBuzz(int n) {
+        List<String> result = new ArrayList<>();
+        for (int i = 1; i <= n; i++) {
+            String s = "";
+            if (i % 3 == 0) s += "Fizz";
+            if (i % 5 == 0) s += "Buzz";
+            s = s.equals("") ? "" + i : s;
+            result.add(s);
+        }
+        return result;
+    }
+}
+```
+
+
+
