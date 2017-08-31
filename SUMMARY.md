@@ -43,6 +43,7 @@
   * [Next Greater Element I](Stack/next-greater-element-i.md)
 * [6.Math](Math/README.md)
   * [Add Digits](Math/add-digits.md)
+  * [Fizz Buzz](Math/fizz-buzz.md)
 * [7.Tree](Tree/README.md)
   * [Maximum Depth of Binary Tree](Tree/maximum-depth-of-binary-tree.md)
   * [Same Tree](Tree/same-tree.md)
