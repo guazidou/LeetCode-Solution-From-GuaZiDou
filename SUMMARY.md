@@ -57,4 +57,5 @@
   * [Number of 1 Bits](Bit Manipulation/number-of-1-bits.md)
   * [Single Number II](Bit Manipulation/single-number-ii.md)
   * [Hamming Distance](Bit Manipulation/hamming-distance.md)
+  * [Number Complement](Bit Manipulation/number-complement.md)
 
