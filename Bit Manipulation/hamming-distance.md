@@ -48,5 +48,17 @@ class Solution(object):
         return str(bin(x ^ y)).count("1")
 ```
 
+# Java
+
+异或后求1的个数。
+
+```java
+class Solution {
+    public int hammingDistance(int x, int y) {
+        return Integer.bitCount(x ^ y);
+    }
+}
+```
+
 
 
