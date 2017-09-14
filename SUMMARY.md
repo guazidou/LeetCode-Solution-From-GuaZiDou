@@ -14,6 +14,7 @@
   * [Length of Last Word](String/length-of-last-word.md)
   * [Integer to Roman](String/integer-to-roman.md)
   * [Validate IP Address](String/validate-ip-address.md)
+  * [Add Strings](String/add-strings.md)
 * [2.Array](Array/README.md)
   * [Pascal's Triangle](Array/pascals-triangle.md)
   * [Pascal's Triangle II](Array/pascals-triangle-ii.md)
