@@ -49,6 +49,7 @@
   * [Add Digits](Math/add-digits.md)
   * [Fizz Buzz](Math/fizz-buzz.md)
   * [Set Mismatch](Math/set-mismatch.md)
+  * [Arranging Coins](Math/arranging-coins.md)
 * [7.Tree](Tree/README.md)
   * [Maximum Depth of Binary Tree](Tree/maximum-depth-of-binary-tree.md)
   * [Same Tree](Tree/same-tree.md)
