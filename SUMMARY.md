@@ -34,6 +34,7 @@
   * [Non-decreasing Array](Array/non-decreasing-array.md)
   * [Find All Numbers Disappeared in an Array](Array/find-all-numbers-disappeared-in-an-array.md)
   * [Maximum Average Subarray I](Array/maximum-average-subarray-i.md)
+  * [Max Consecutive Ones](Array/max-consecutive-ones.md)
 * [3.Linked List](Linked List/README.md)
   * [Remove Linked List Elements](Linked List/remove-linked-list-elements.md)
   * [Add Two Numbers](Linked List/add-two-numbers.md)
