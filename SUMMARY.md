@@ -37,6 +37,7 @@
   * [Max Consecutive Ones](Array/max-consecutive-ones.md)
   * [Single Element in a Sorted Array](Array/single-element-in-a-sorted-array.md)
   * [Search Insert Position](Array/search-insert-position.md)
+  * [Array Partition I](Array/array-partition-i.md)
 * [3.Linked List](Linked List/README.md)
   * [Remove Linked List Elements](Linked List/remove-linked-list-elements.md)
   * [Add Two Numbers](Linked List/add-two-numbers.md)

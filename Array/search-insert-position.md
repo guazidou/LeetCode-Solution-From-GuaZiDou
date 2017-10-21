@@ -10,8 +10,6 @@ Here are few examples.
 `[1,3,5,6]`, 7 → 4  
 `[1,3,5,6]`, 0 → 0
 
-
-
 # 题目链接
 
 [https://leetcode.com/problems/search-insert-position/description/](https://leetcode.com/problems/search-insert-position/description/)
