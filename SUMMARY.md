@@ -47,6 +47,7 @@
   * [Single Number](Hash Table/single-number.md)
   * [Replace Words](Hash Table/replace-words.md)
   * [Longest Substring Without Repeating Characters](Hash Table/longest-substring-without-repeating-characters.md)
+  * [Keyboard Row](Hash Table/keyboard-row.md)
 * [5.Stack](Stack/README.md)
   * [Valid Parentheses](Stack/valid-parentheses.md)
   * [Next Greater Element I](Stack/next-greater-element-i.md)
