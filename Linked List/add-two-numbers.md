@@ -64,4 +64,38 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 ```
 
 
+# Go
+
+需要注意最后一次加减是否需要进位
+
+## Code
+
+```go
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+    res := &ListNode{}
+	p, q , w:= l1, l2, res
+	var x, y, carry int
+	for p != nil || q != nil {
+		if p == nil {x = 0} else {x = p.Val}
+		if q == nil {y = 0} else {y = q.Val}
+		summary := carry + x + y
+		carry = summary / 10
+		w.Next = &ListNode{summary % 10, nil}
+		w = w.Next
+		if p != nil {p = p.Next}
+		if q != nil {q = q.Next}
+	}
+	if carry > 0 {
+		w.Next = &ListNode{carry, nil}
+	}
+	return res.Next
+}
+```
 
