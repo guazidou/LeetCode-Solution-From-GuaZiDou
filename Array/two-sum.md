@@ -18,6 +18,26 @@ return [0, 1].
 [https://leetcode.com/problems/two-sum/description/](https://leetcode.com/problems/two-sum/description/)
 
 ---
+# Golang
+此题可以使用暴力求解，但是时间复杂度是O(n^2)
+有一个优化算法是
+- 使用hash table，遍历将每个数据入表 - Time: O(n), Space: O(n)
+- 遍历同时，每次求差值，判断差是否已经存在
+- Golang中可以使用map数据结构，map[int]int 数组元素为键，下标为值
+
+```golang
+func twoSum(nums []int, target int) []int {
+	bucket := map[int]int{}
+	for _, v := range nums {
+		value, exist := bucket[target-v]
+		if exist {
+			return []int{v, value}
+		}
+		bucket[v] = v
+	}
+	return []int{}
+}
+```
 
 # Python
 
