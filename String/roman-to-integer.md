@@ -78,5 +78,32 @@ public int romanToInt(String s) {
     }
 ```
 
+# Go
+```go
+package main
 
+import (
+	"fmt"
+)
+
+var roman_dict = map[byte]int{'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 10000}
+
+func romanToInt(roman string) int {
+	result := 0
+	for i := 0; i < len(roman)-1; i++ {
+		current, next := roman_dict[roman[i]], roman_dict[roman[i+1]]
+		if current < next {
+			result -= current
+		} else {
+			result += current
+		}
+	}
+	end := roman_dict[roman[len(roman)-1]]
+	return result + end
+}
+
+func main() {
+	fmt.Println(romanToInt("IXV"))
+}
+```
 
