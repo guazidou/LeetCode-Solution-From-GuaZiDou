@@ -47,7 +47,7 @@ public class Solution {
 
 
 # Go
-```
+```go
 package main
 
 import (
