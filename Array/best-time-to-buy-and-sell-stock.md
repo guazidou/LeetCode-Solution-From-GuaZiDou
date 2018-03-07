@@ -69,4 +69,35 @@ class Solution {
 ```
 
 
+# Golang
+
+DP 求解
+
+```golang
+package main
+
+import (
+	"fmt"
+)
+
+func MaxProfit(prices []int) int {
+	low := prices[0]
+	result := 0
+	for i := 1; i < len(prices); i++ {
+		if prices[i] < low {
+			low = prices[i]
+		}
+		if prices[i]-low > result {
+			result = prices[i] - low
+		}
+	}
+	return result
+}
+
+func main() {
+	a := []int{7, 3, 1, 2, 6, 8}
+	fmt.Println(MaxProfit(a[:]))
+}
+```
+
 
