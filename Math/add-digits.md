@@ -40,5 +40,17 @@ public class Solution {
 }
 ```
 
+# golang
+
+```golang
+func AddDigits(num int){
+    if num == 0{
+        return 0
+    }else{
+        return 1 + (num - 1) % 9;
+    }
+}
+```
+
 
 
