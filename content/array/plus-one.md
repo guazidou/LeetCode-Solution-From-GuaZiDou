@@ -1,0 +1,58 @@
+# Plus One
+
+## 问题描述
+
+Given a non-negative integer represented as a **non-empty** array of digits, plus one to the integer.
+
+You may assume the integer do not contain any leading zero, except the number 0 itself.
+
+The digits are stored such that the most significant digit is at the head of the list.
+
+### 题目链接
+
+[https://leetcode.com/problems/plus-one/description/](https://leetcode.com/problems/plus-one/description/)
+
+## Python
+
+Python支持大数加法，直接转换到int型，然后进行字符串处理就好
+
+```python
+class Solution:
+    # @param {integer[]} digits
+    # @return {integer[]}
+    def plusOne(self, digits):
+        return [int(x) for x in str(int(''.join("%s" % y for y in digits)) + 1)]
+```
+
+## Java
+
+最容易想到的就是从数组的最后一位加1，往前进位，若最后还有进位说明需要扩容数组第一位置为1，后面数组数据拷贝之前计算的结果。
+
+```java
+public class Solution {
+    public int[] plusOne(int[] digits) {
+        int flag = 1;//进位标志
+        for (int i = digits.length - 1; i >= 0; i--) {
+            if (digits[i] + flag >= 10) {
+                digits[i] = (digits[i] + flag) % 10;
+                flag = 1;
+            } else {
+                digits[i] = (digits[i] + flag) % 10;
+                flag = 0;
+            }
+        }
+
+        if (flag == 1) {
+            int[] results = new int[digits.length + 1];
+            results[0] = 1;
+            for (int i = 0; i < digits.length; i++) {
+                results[i + 1] = digits[i];
+            }
+            return results;
+        } else {
+            return digits;
+        }
+    }
+}
+```
+
