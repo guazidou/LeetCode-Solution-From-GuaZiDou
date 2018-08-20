@@ -27,13 +27,13 @@ return [0, 1].
 
 ```golang
 func twoSum(nums []int, target int) []int {
-	bucket := map[int]int{}
-	for _, v := range nums {
-		value, exist := bucket[target-v]
-		if exist {
-			return []int{v, value}
+	b := map[int]int{}
+	for i, v := range nums {
+		r, e := b[target-v]
+		if e {
+			return []int{r, i}
 		}
-		bucket[v] = v
+		b[v] = i
 	}
 	return []int{}
 }
