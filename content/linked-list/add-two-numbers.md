@@ -98,3 +98,29 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 }
 ```
 
+一种优化的方法
+
+```go
+func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+	res := &ListNode{}
+	p, q, w, sum := l1, l2, res, 0
+	for p != nil || q != nil {
+		sum /= 10
+		if p != nil {
+			sum += p.Val
+			p = p.Next
+		}
+		if q != nil {
+			sum += q.Val
+			q = q.Next
+		}
+		w.Next = &ListNode{sum % 10, nil}
+		w = w.Next
+	}
+	if sum/10 == 1 {
+		w.Next = &ListNode{1, nil}
+	}
+	return res.Next
+}
+```
+
