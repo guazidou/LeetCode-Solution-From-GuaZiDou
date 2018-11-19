@@ -70,4 +70,31 @@ public static ListNode removeElements(ListNode head, int val) {
 ```
 
 
+# Golang
 
+需要考虑root可能需要被删除的情况.
+
+```golang
+//type ListNode struct {
+//  Val  int
+//  Next *ListNode
+//}
+
+
+func removeElements(root *ListNode, val int) {
+    pre := &ListNode{
+        Next: root,
+    }
+    cur := root
+    for cur != nil {
+        if cur.Val == val {
+            pre.next = now.next
+            now = pre.next
+        } else {
+            pre = pre.next
+            now = now.next
+        }
+    }
+    return pre.Next
+}
+```
