@@ -58,7 +58,7 @@ public class Solution {
 
 # golang
 
-注意进位问题,原地修改
+全9的时候需要增加数组长度, 注意进位问题,原地修改
 
 ```golang
 func plusOne(arr []int) {
