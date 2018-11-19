@@ -20,7 +20,10 @@
 
 ## 贡献者
 
-Vic Yu [i@vicyu.com](https://github.com/guazidou/leetcode-solution-from-guazidou/tree/df233676e1537b6971a945f3a5fec265f930fe3c/i@vicyu.com)
+Vic Yu [i@vicyu.com](https://vicyu.com)
 
 Zeke Lin [hackcode93@gmail.com](mailto:hackcode93@gmail.com)
 
+hackrole
+
+Kai Zhao
