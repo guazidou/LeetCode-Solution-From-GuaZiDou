@@ -47,3 +47,21 @@ public class Solution {
 }
 ```
 
+
+## golang
+
+无法取得前节点在删除的情况下,将当前节点Val和Next指针替换为下个节点
+
+```golang
+//type ListNode struct {
+//  Val  int
+//  Next *ListNode
+//}
+
+func deleteNode(node *ListNode) {
+    if node != nil {
+        node.Val = node.Next.Val
+        node.Next = node.Next.Next
+    }
+}
+```

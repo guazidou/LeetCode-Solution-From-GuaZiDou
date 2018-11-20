@@ -59,3 +59,27 @@ class Solution {
 }
 ```
 
+## golang
+
+```golang
+func findDiappearedNumbers(nums []int) result []int{
+    for index, value := range nums{
+        nums[abs(nums[index]) - 1] = - abs(nums[abs(nums[i]]) - 1)
+    }
+
+    for _, value = range nums {
+        if value > 0 {
+            result := append(result, value)
+        }
+    }
+    return result
+}
+
+func abs(a int) int{
+    if a >= 0 {
+        return a
+    }
+    return -a
+}
+```
+

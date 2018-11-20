@@ -77,3 +77,38 @@ func plusOne(digits []int) []int {
 	}
 }
 ```
+
+方法二:
+全9的时候需要增加数组长度, 注意进位问题,原地修改
+
+```golang
+func plusOne(arr []int) {
+    if all9(arr){
+        arr := []int{1}
+        for i := 1; i <= len(arr); i++ {
+            arr := append(arr, 0)
+        }
+        return
+    }
+
+    int flag = 1
+    for i := len(arr) - 1; i >= 0; i++{
+        if arr[i] + flag >= 10 {
+            arr[i] = (arr[i] + flag) % 10
+            flag = 1
+        }
+        if flag != 1 {
+            break
+        }
+    }
+}
+
+func all9(arr []int) bool{
+    for _, i := range arr {
+        if i != 9 {
+            return false
+        }
+    }
+    return true
+}
+```
