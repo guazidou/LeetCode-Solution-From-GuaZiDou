@@ -24,6 +24,6 @@ Vic Yu [i@vicyu.com](https://vicyu.com)
 
 Zeke Lin [hackcode93@gmail.com](mailto:hackcode93@gmail.com)
 
-hackrole
+hackrole [daipeng123456@gmail.com](daipeng123456@gmail.com)
 
-Kai Zhao
+Kai Zhao [kidd747@gmail.com](kidd747@gmail.com)
