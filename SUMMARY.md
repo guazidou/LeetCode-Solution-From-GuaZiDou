@@ -4,7 +4,6 @@
 
 ## Preface
 
-* [前言](preface/preface.md)
 * [Change Log](preface/change-log.md)
 
 ## Content
