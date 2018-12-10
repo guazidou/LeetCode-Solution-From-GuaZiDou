@@ -32,3 +32,17 @@ class Solution {
 }
 ```
 
+
+## golang
+简单遍历
+
+```golang
+func searchInsert(nums []int, target int) int{
+   for i, v := range nums {
+     if target <= v{
+         return i
+     }
+   } 
+   return len(nums)
+}
+```

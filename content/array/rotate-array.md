@@ -26,3 +26,21 @@ class Solution:
         nums[:] = nums[l-k:l] + nums[0:l-k]
 ```
 
+## Golang
+
+通过三次reverse实现, 原地修改
+
+```golang
+func rotate(nums []int, k int){
+    reverse(nums[:k+1])
+    reverse(nums[k+1:])
+    reverse(nums)
+}
+
+func reverse(nums []int){
+    l := len(nums)
+    for i := 0; i < l / 2; i++ {
+        nums[i], nums[l - 1 - i] = num[l - 1 - i], num[i]
+    }
+}
+```

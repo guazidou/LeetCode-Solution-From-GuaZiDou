@@ -72,3 +72,19 @@ public class Solution {
 }
 ```
 
+
+# Golang
+
+
+```golang
+func InvertTree(root *TreeNode) {
+	if root == nil {
+		return
+	}
+
+	root.Left, root.Right = root.Right, root.Left
+
+	InvertTree(root.Left)
+	InvertTree(root.Right)
+}
+```

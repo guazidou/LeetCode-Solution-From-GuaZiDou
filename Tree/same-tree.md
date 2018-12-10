@@ -9,7 +9,6 @@ Two binary trees are considered equal if they are structurally identical and the
 [https://leetcode.com/problems/same-tree/description/](https://leetcode.com/problems/same-tree/description/)
 
 ---
-
 # Python {#python}
 
 模拟
@@ -56,3 +55,21 @@ public class Solution {
 
 
 
+# Golang
+
+```Golang
+func isSameTree(p *NodeTree, q *NodeTree) bool {
+  if p == nil && q == nil {
+    return true
+  }
+  if (p != nil && q == nil) || (p == nil && q != nil){
+    return false
+  }
+
+  if p.Val != q.Val {
+    return False
+  }
+
+  return isSameTree(p.Left, q.Left) && isSameTree(p.Right, q.Right)
+}
+```
